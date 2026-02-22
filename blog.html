@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Outbound Malang | Artikel Outbound & Team Building</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Baca artikel terbaru seputar outbound, team building, gathering, dan adventure di Malang & Batu oleh Gemilang Katun Outbound.">
+    <meta name="keywords"
+        content="blog outbound malang, artikel outbound batu, tips team building, paket outbound, gathering malang">
+    <meta name="author" content="Gemilang Katun Outbound">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://outboundmalang.com/blog.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Outbound Malang">
+    <meta property="og:title" content="Blog - Outbound Malang | Artikel Outbound & Team Building">
+    <meta property="og:description"
+        content="Baca artikel terbaru seputar outbound, team building, gathering, dan adventure di Malang & Batu.">
+    <meta property="og:url" content="https://outboundmalang.com/blog.html">
+    <meta property="og:image" content="https://outboundmalang.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="id_ID">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog - Outbound Malang | Artikel Outbound & Team Building">
+    <meta name="twitter:description"
+        content="Baca artikel terbaru seputar outbound, team building, gathering, dan adventure di Malang & Batu.">
+    <meta name="twitter:image" content="https://outboundmalang.com/og-image.jpg">
+
+    <!-- GEO Tags -->
+    <meta name="geo.region" content="ID-JI">
+    <meta name="geo.placename" content="Malang, Jawa Timur">
+    <meta name="geo.position" content="-7.9786;112.6317">
+    <meta name="ICBM" content="-7.9786, 112.6317">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Blog Outbound Malang",
+        "description": "Kumpulan artikel seputar outbound, team building, dan gathering di Malang & Batu.",
+        "url": "https://outboundmalang.com/blog.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Gemilang Katun Outbound"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://outboundmalang.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://outboundmalang.com/blog.html" }
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #ccff00;
+            --primary-dark: #a8d600;
+            --bg-dark: #0D0D0D;
+            --surface-dark: #141414;
+            --surface-dark-2: #1a1a1a;
+            --border-dark: rgba(255, 255, 255, 0.08);
+            --text-muted: #9ca3af;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--bg-dark);
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+
+        ::selection {
+            background: var(--primary);
+            color: var(--bg-dark);
+        }
+
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        /* ===== NAVBAR (sama persis homepage) ===== */
+        .navbar-custom {
+            background: rgba(13, 13, 13, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-dark);
+            padding: 0;
+        }
+
+        .navbar-custom .navbar-brand {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.6rem;
+            color: #fff;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .navbar-custom .navbar-brand .brand-icon {
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+
+        .navbar-custom .nav-link {
+            color: #94a3b8 !important;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 0.8rem 1.2rem !important;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-custom .nav-link:hover,
+        .navbar-custom .nav-link.active {
+            color: var(--primary) !important;
+        }
+
+        .btn-cta {
+            background: var(--primary);
+            color: var(--bg-dark);
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-cta:hover {
+            background: #fff;
+            color: var(--bg-dark);
+            transform: scale(1.05);
+        }
+
+        .navbar-toggler {
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .offcanvas-custom {
+            background: var(--bg-dark);
+            border-left: 1px solid var(--border-dark);
+        }
+
+        /* ===== BLOG HEADER ===== */
+        .blog-header {
+            padding: 140px 0 60px;
+            border-bottom: 1px solid var(--border-dark);
+        }
+
+        .blog-label {
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .blog-label::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary);
+        }
+
+        .blog-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 700;
+            color: #fff;
+            line-height: 0.95;
+            letter-spacing: -2px;
+        }
+
+        .blog-title .text-faded {
+            color: #4b5563;
+        }
+
+        .blog-desc {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* ===== ARTICLE CARDS ===== */
+        .article-card {
+            background: var(--surface-dark-2);
+            border: 1px solid var(--border-dark);
+            border-radius: 6px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 60px rgba(204, 255, 0, 0.08);
+        }
+
+        .article-card .card-img-wrapper {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .article-card .card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: all 0.5s ease;
+        }
+
+        .article-card:hover .card-img-wrapper img {
+            filter: grayscale(0%);
+            transform: scale(1.08);
+        }
+
+        .article-card .card-body {
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .article-tag {
+            color: var(--primary);
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .article-card h3 {
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 12px 0;
+        }
+
+        .article-card p {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            line-height: 1.6;
+        }
+
+        .article-link {
+            color: #fff;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: auto;
+            padding-top: 16px;
+            transition: color 0.3s;
+        }
+
+        .article-link:hover {
+            color: var(--primary);
+        }
+
+        .article-link i {
+            transition: transform 0.3s;
+        }
+
+        .article-link:hover i {
+            transform: translateX(4px);
+        }
+
+        /* Hero Article Card */
+        .hero-article-card {
+            background: var(--surface-dark-2);
+            border: 1px solid var(--border-dark);
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.4s ease;
+        }
+
+        .hero-article-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 20px 60px rgba(204, 255, 0, 0.08);
+        }
+
+        .hero-article-card .card-bg {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+
+        .hero-article-card .card-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: all 0.5s ease;
+        }
+
+        .hero-article-card:hover .card-bg img {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+
+        .hero-article-card .card-bg-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), transparent);
+        }
+
+        .hero-article-card .card-content {
+            position: relative;
+            z-index: 1;
+            margin-top: auto;
+            padding: 40px;
+        }
+
+        .hero-article-card .card-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+            border-radius: 2px;
+        }
+
+        .hero-article-card h2 {
+            color: #fff;
+            font-size: clamp(1.6rem, 3vw, 2.8rem);
+            font-weight: 700;
+            line-height: 1.15;
+            margin: 16px 0;
+        }
+
+        .hero-article-card p {
+            color: #d1d5db;
+            font-size: 1rem;
+            max-width: 600px;
+        }
+
+        /* Horizontal Card */
+        .horizontal-card {
+            background: var(--surface-dark-2);
+            border: 1px solid var(--border-dark);
+            border-radius: 6px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .horizontal-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 20px 60px rgba(204, 255, 0, 0.08);
+        }
+
+        .horizontal-card .h-card-img {
+            height: 100%;
+            min-height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .horizontal-card .h-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            inset: 0;
+            filter: grayscale(100%);
+            transition: all 0.5s ease;
+        }
+
+        .horizontal-card:hover .h-card-img img {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+
+        .horizontal-card .h-card-body {
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        /* ===== FOOTER (sama persis homepage) ===== */
+        .footer-main {
+            background: var(--surface-dark);
+            border-top: 1px solid var(--border-dark);
+            padding-top: 80px;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        .footer-brand .brand-icon {
+            color: var(--primary);
+            font-size: 2rem;
+        }
+
+        .footer-brand span {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        .footer-desc {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            max-width: 360px;
+        }
+
+        .footer-title {
+            color: #fff;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .footer-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.88rem;
+            display: block;
+            padding: 5px 0;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .footer-link:hover {
+            color: var(--primary);
+            transform: translateX(4px);
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .footer-contact-item i {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-top: 3px;
+        }
+
+        .footer-contact-item span {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            line-height: 1.5;
+        }
+
+        .footer-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border: 1px solid var(--border-dark);
+            border-radius: 50%;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-right: 8px;
+        }
+
+        .footer-social a:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: var(--bg-dark);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            margin-top: 60px;
+            padding: 24px 0;
+            border-top: 1px solid var(--border-dark);
+        }
+
+        .footer-bottom p {
+            color: #4b5563;
+            font-size: 0.8rem;
+        }
+
+        /* ===== FLOATING BUTTONS ===== */
+        .floating-buttons {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-float {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .btn-float:hover {
+            transform: scale(1.12);
+        }
+
+        .btn-wa {
+            background: #25D366;
+            color: #fff;
+        }
+
+        .btn-wa:hover {
+            background: #1fb855;
+            color: #fff;
+        }
+
+        .btn-scroll-top {
+            background: var(--primary);
+            color: var(--bg-dark);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .btn-scroll-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .btn-scroll-top:hover {
+            background: #fff;
+            color: var(--bg-dark);
+        }
+
+        @media (max-width: 767.98px) {
+            .floating-buttons {
+                bottom: 20px;
+                right: 16px;
+            }
+
+            .btn-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+            }
+
+            .hero-article-card {
+                min-height: 380px;
+            }
+
+            .hero-article-card .card-content {
+                padding: 24px;
+            }
+
+            .hero-article-card h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR (sama persis homepage) ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-mountain brand-icon"></i>
+                OUTBOUND MALANG
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu" aria-label="Toggle navigasi">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== BLOG HEADER ===== -->
+    <header class="blog-header" id="top">
+        <div class="container">
+            <div class="row align-items-end gy-4">
+                <div class="col-lg-8">
+                    <p class="blog-label mb-3">Blog Outbound Malang</p>
+                    <h1 class="blog-title">
+                        CERITA DARI<br><span class="text-faded">ALAM TERBUKA.</span>
+                    </h1>
+                </div>
+                <div class="col-lg-4">
+                    <p class="blog-desc">
+                        Jelajahi wawasan tentang outbound, team building, gathering, dan petualangan di Malang & Batu.
+                        Ditulis untuk para pemimpin dan tim modern.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BLOG CONTENT ===== -->
+    <main class="py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Featured: Artikel 1 (Full Width Hero) -->
+                <div class="col-12">
+                    <div class="hero-article-card">
+                        <div class="card-bg">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyYXrl2Wpw2MXJGrf2QzZ73mWD-oydCqeZtaj4gb0xl4UIR3O8KaNm2FiehbcyifTfTUyzog1BkRZoHKSzzzl59803e_6LfXSNa8JHNhlbUNHAMWrnw6MvwEJgxgo11vLUxLahBvWAoseDaOwI4oLZ1C--a3ZpMlyT4ihVwsZygVZHf0123hv40IryBUU1y4y0OgjQcFWBKXuf3fmJX6ndXhtWxGVdACBiZuBV7XHilDPGDi1aLJNSzz2G6_de7wyxAKJrgmryyLNI"
+                                alt="Paket Outbound Treasure Hunt Batu" loading="lazy" width="800" height="500">
+                            <div class="card-bg-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Outbound Batu</span>
+                            <h2>Paket Outbound Treasure Hunt Batu — Petualangan Memecah Sandi</h2>
+                            <p>Mengadopsi format petualangan interaktif melalui paket outbound treasure hunt yang
+                                mengubah seluruh lanskap desa wisata menjadi papan permainan raksasa.</p>
+                            <a class="article-link" href="artikel-1.html">
+                                Baca Selengkapnya <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artikel 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="article-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt7KnBrNFy-cjCG5Yz4oxa0_RkOGtEKhOHIZLwMXSCY17eIcSgoRcyOzSJzm6yapy2DLK5cnHCydelJcYTS2ZCC5s9YiVv-xX4Y8Pd22ubh8IeWGhcz0LrtA9m6RG_7toOw2gfZIUCM7OjHAZKACTLn-H06NiqZULtBXPjQi2JXbFOEIL0-ppYyUfNqicC5csncLTEjdgT2NI8XHaxclorhdyeQQQS3huHVuXzaKLE3U4sSSW6LVJmlImDhPrOJtWfMNzZctPXHQqv"
+                                alt="Outbound Trust Building Games Batu" loading="lazy" width="600" height="400">
+                        </div>
+                        <div class="card-body">
+                            <span class="article-tag">Team Building</span>
+                            <h3>Outbound Trust Building Games Batu</h3>
+                            <p>Sembuhkan luka komunikasi lewat simulasi emosional yang membangun kembali rasa saling
+                                percaya antar karyawan.</p>
+                            <a class="article-link" href="artikel-2.html">
+                                Baca Artikel <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artikel 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="article-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuATt1QJ23l3uWcf6HSxlRUq6wouIZvKAQDUhhKy2Y7rCRt5zImCx27geElynDbKy6OVhjHHZR7fBMB1PME-yr20_ZePzNJIhqR9Vn7-EMb9nBxNRZTZPQeXZnLjs7QRDDzQrWL8phTSpMwPamdgkk6cGG8Erl4MFxdKVPVmnNRfV87NLYRtZEy7Ijp8EQKBptlsclO34pRKWvzp6-CcfscIjBvDEqkmwjo71w01K3zPibOcf45qPDprS_ZNmJWIhnyKUxF_nYhm_Ytg"
+                                alt="Gathering Keluarga Besar di Batu" loading="lazy" width="600" height="400">
+                        </div>
+                        <div class="card-body">
+                            <span class="article-tag">Gathering</span>
+                            <h3>Satukan Lintas Generasi — Paket Gathering Reuni Keluarga Besar</h3>
+                            <p>Momen kebersamaan keluarga besar yang diorganisir secara profesional dengan aktivitas
+                                seru untuk segala usia.</p>
+                            <a class="article-link" href="artikel-3.html">
+                                Baca Artikel <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artikel 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="article-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdupWo7gFf0vVXx00HroX19HTN7RpznX8wpgUQKUgdPewdhIxFtDRJRKAvaJMrDd5JKw6nFHaJdMcZ7EFdaIjCXRBiMRh6cebPmWTBtZtaveCfLk9QcfmqO-AO63qfkSu_b3BQkSovvruij3WjqyVpS8nFigvwQQEUCu4PxTr-e1hsxAoVpc6XN_P5fRlLglz8DvXHA6dJOFEl_2lCETyiy2Jnkk856lciCdpa3_tQTinO8qxuQF69JSH09QeYnA89RmdcRQhn1-0H"
+                                alt="Biaya Sewa Jeep Bromo dari Batu" loading="lazy" width="600" height="400">
+                        </div>
+                        <div class="card-body">
+                            <span class="article-tag">Adventure</span>
+                            <h3>Rincian Transparan Biaya Sewa Jeep Bromo dari Batu</h3>
+                            <p>Ketahui rincian pengeluaran perjalanan lintas kawasan dari Batu menuju lautan pasir
+                                vulkanik Bromo tanpa terjebak harga calo.</p>
+                            <a class="article-link" href="artikel-4.html">
+                                Baca Artikel <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artikel 5 -->
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="article-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjQMPGJRot1Q_ii4QE9Osmfzwu4qFS2pnLdYNz5Ju0VrILaTCNOnqZhe5tMeG21fTeEBXmWLsZkLQFyBSdsTfffbUv1Bep8RpZEEP1IdWqRT5DbDe3B2w0WSnEDfYJp9tHmqQ4_Yn5v3EMAcChBp3O-e3sMqkdrqNWMIReTxjGiKijGhSBntSHTLivC_Yl4qzPc9lLBSnBaQZ8vMD3PTDJsTrCftB91Qctv_rNjMfv4x_QKCox5L6Wbz37pH63X_8f4ffGBtn1V3c4"
+                                alt="Provider Outbound Rohani" loading="lazy" width="600" height="400">
+                        </div>
+                        <div class="card-body">
+                            <span class="article-tag">Rohani</span>
+                            <h3>Rekomendasi Tempat Outbound Rohani Kristen di Malang</h3>
+                            <p>Siraman ketenangan batin bersama program pelatihan berbasis kerohanian yang merangkul
+                                nilai-nilai universal lintas agama.</p>
+                            <a class="article-link" href="artikel-5.html">
+                                Baca Artikel <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER (sama persis homepage) ===== -->
+    <footer class="footer-main" id="kontak">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <a class="footer-brand" href="index.html">
+                        <i class="bi bi-mountain brand-icon"></i>
+                        <span>OUTBOUND MALANG</span>
+                    </a>
+                    <p class="footer-desc mb-4">
+                        Penyedia jasa outbound, team building, dan gathering profesional di Malang & Batu. Pengalaman
+                        premium untuk membangun tim yang solid dan tangguh.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/6282211221909" target="_blank" rel="noopener noreferrer"
+                            title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" title="Instagram"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" title="Facebook"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" title="YouTube"><i
+                                class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">NAVIGASI</h4>
+                    <a class="footer-link" href="index.html">Home</a>
+                    <a class="footer-link" href="blog.html">Blog</a>
+                    <a class="footer-link" href="index.html#tentang-kami">Tentang Kami</a>
+                    <a class="footer-link" href="index.html#layanan">Layanan</a>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="footer-title">ARTIKEL POPULER</h4>
+                    <a class="footer-link" href="artikel-1.html">Treasure Hunt Batu</a>
+                    <a class="footer-link" href="artikel-2.html">Trust Building Games</a>
+                    <a class="footer-link" href="artikel-3.html">Gathering Keluarga</a>
+                    <a class="footer-link" href="artikel-4.html">Sewa Jeep Bromo</a>
+                    <a class="footer-link" href="artikel-5.html">Outbound Rohani</a>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="footer-title">HUBUNGI KAMI</h4>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Kota Batu, Malang<br>Jawa Timur, Indonesia</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-whatsapp"></i>
+                        <span><a href="https://wa.me/6282211221909" target="_blank" rel="noopener noreferrer"
+                                style="color: #fff; text-decoration: none;">0822-1122-1909</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>info@outboundmalang.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-0">&copy; 2026 Outbound Malang — Gemilang Katun Outbound. Seluruh hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING BUTTONS ===== -->
+    <div class="floating-buttons">
+        <a class="btn-float btn-scroll-top" href="#top" id="scrollTopBtn" title="Kembali ke atas">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+        <a class="btn-float btn-wa"
+            href="https://wa.me/6282211221909?text=Halo%20Outbound%20Malang%2C%20saya%20ingin%20bertanya"
+            target="_blank" rel="noopener noreferrer" title="Chat WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 400) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        document.querySelectorAll('#mobileMenu .nav-link').forEach(link => {
+            link.addEventListener('click', function () {
+                const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById('mobileMenu'));
+                if (offcanvas) offcanvas.hide();
+            });
+        });
+    </script>
+</body>
+
+</html>
