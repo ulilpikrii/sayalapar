@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgJ" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFEDD5"/>
+      <stop offset="60%" stop-color="#FDBA74"/>
+      <stop offset="100%" stop-color="#9A3412"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgJ)"/>
+  
+  <!-- Sand Dunes -->
+  <path d="M0 400 L0 250 Q150 200 300 280 T600 220 L600 400 Z" fill="#EA580C" opacity="0.8"/>
+  <path d="M0 400 L0 300 Q200 260 400 320 T600 300 L600 400 Z" fill="#C2410C"/>
+
+  <!-- Sun -->
+  <circle cx="300" cy="180" r="60" fill="#FEF08A" opacity="0.9"/>
+
+  <!-- Jeep Abstract Shape -->
+  <g transform="translate(380, 240) scale(0.6)">
+    <!-- Wheels -->
+    <circle cx="40" cy="80" r="25" fill="#1C1917"/>
+    <circle cx="160" cy="80" r="25" fill="#1C1917"/>
+    <!-- Body -->
+    <path d="M10 50 L30 15 L100 15 L130 50 L190 50 L190 80 L10 80 Z" fill="#292524"/>
+    <!-- Window -->
+    <path d="M35 45 L45 20 L95 20 L120 45 Z" fill="#E7E5E4" opacity="0.8"/>
+  </g>
+</svg>
