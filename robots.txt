@@ -1,13 +1,27 @@
+# robots.txt for Gemilang Katun Outbound
+# https://gemilangkatun.com
+
 User-agent: *
 Allow: /
-Sitemap: https://outboundmalang.com/sitemap.xml
 
-User-agent: Googlebot
-Allow: /
+# Sitemap
+Sitemap: https://gemilangkatun.com/sitemap.xml
 
-User-agent: Bingbot
-Allow: /
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1
 
-# Block access to admin or internal directories
-User-agent: *
-Disallow: /.gemini/
+# Disallow admin/system folders
+Disallow: /css/
+Disallow: /.git/
+
+# Allow all article pages
+Allow: /artikel-1.html
+Allow: /artikel-2.html
+Allow: /artikel-3.html
+Allow: /artikel-4.html
+Allow: /artikel-5.html
+Allow: /blog.html
+Allow: /index.html
+
+# Allow images
+Allow: /images/
