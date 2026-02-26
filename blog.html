@@ -385,24 +385,25 @@
     </div>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <script>
-        // Navbar scroll effect
         const navbar = document.getElementById('mainNav');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
-        });
-
-        // Scroll to top button
         const scrollTopBtn = document.getElementById('scrollTopBtn');
+        let ticking = false;
         window.addEventListener('scroll', () => {
-            scrollTopBtn.classList.toggle('show', window.scrollY > 500);
-        });
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    const sy = window.scrollY;
+                    navbar.classList.toggle('scrolled', sy > 50);
+                    scrollTopBtn.classList.toggle('show', sy > 500);
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
         scrollTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-
-        // Fade-up animation
         const fadeElements = document.querySelectorAll('.fade-up');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
